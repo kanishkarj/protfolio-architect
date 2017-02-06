@@ -1,0 +1,118 @@
+*{
+	font-family: 'Quicksand', cursive;
+}
+.navbar-default {
+    background-color: #7B68EE;
+    border-color: #7B68EE;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #777;
+    font-weight: bold;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+a:link {
+    color: lightblue !important; 
+    font-weight: bold;
+}
+
+/* visited link */
+a:visited {
+    color: lightblue !important;
+    font-weight: bold;
+}
+
+/* mouse over link */
+a:hover {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* selected link */
+a:active {
+    color: lightblue !important;
+    font-weight: bold;
+}
+
+footer nav{
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	align-self: center;
+}
+footer{
+	height: 50px;
+	padding:10px;
+	margin-top: 2em;
+	background-color: #7B68EE;
+}
+footer nav ul{
+	list-style: none;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	align-self: center;
+}
+li {
+    display: inline;
+    margin-right: 25px;
+}

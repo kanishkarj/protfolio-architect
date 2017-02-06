@@ -25,9 +25,12 @@ header {
 	font-size: xx-large;
 
 }
+#header-title h1 small{
+	color: white;
+}
 #header-title {
 	background-color:  	#7B68EE;
-	width: 300px;
+	width: 280px;
 
 }
 
@@ -37,6 +40,13 @@ section{
 	width: 100%;
 	padding:1em;
 	padding-top: 2em;
+	
+}
+#art2{
+	font-family: 'Quicksand', serif;
+	font-weight: bold;
+	color: white;
+	color: blue;
 }
 h1 {
 	font-family: 'Pacifico', cursive;
@@ -45,14 +55,15 @@ h1 {
 	padding: 0.5em;
 	font-size: 5em;
 }
-h2{
+.p-title{
 	font-family: 'Pacifico', cursive;
 	text-align: center;
-	padding: 0.5em;
+	font-size: xx-large;
+	padding-top: 10px;
 	height: 100%;
 	width: 100%;
-	background-color: gray;
-	opacity: 0.3;
+	opacity: 0.8;
+	font-weight: lighter;
 }
 p{
 	font-family: 'Quicksand', serif;
@@ -75,31 +86,34 @@ p{
  .boxes{
  	background-repeat:no-repeat;
 	background-size: cover;
+	 background-position: center; 
 	height: 15em;
-	background-position:center;
  }
   .link_styles{
-	width: 100%; 
-	height: 5em; 
-	background-color: #7B68EE;
+	width: 15em; 
+	height: auto; 
+	padding: 1em;
+	margin-top: 1em;
+	padding-bottom: 1.5em;
+	background-color: #663399;
   }
  a:link {
-    color: black;
+    color: black !important; 
 }
 
 /* visited link */
 a:visited {
-    color: black;
+    color: black !important;
 }
 
 /* mouse over link */
 a:hover {
-    color: white;
+    color: lightblue !important;
 }
 
 /* selected link */
 a:active {
-    color: black;
+    color: black !important;
 }
 footer nav{
 	align-content: center;
@@ -109,8 +123,8 @@ footer nav{
 }
 footer{
 	height: 50px;
-	margin-top: 2em;
 	padding:10px;
+	margin-top: 2em;
 	background-color: #7B68EE;
 }
 footer nav ul{
@@ -123,4 +137,9 @@ footer nav ul{
 li {
     display: inline;
     margin-right: 25px;
+}
+.box_style{
+	height: 5em;
+	background-color: gray;
+	opacity: 0.5;
 }
