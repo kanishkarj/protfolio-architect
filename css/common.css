@@ -4,6 +4,10 @@
 .navbar-default {
     background-color: #7B68EE;
     border-color: #7B68EE;
+    border-width: 0px;
+    border-radius: 0px;
+    padding-bottom: 0px;
+    
 }
 /* title */
 .navbar-default .navbar-brand {
@@ -115,4 +119,28 @@ footer nav ul{
 li {
     display: inline;
     margin-right: 25px;
+}
+#content{
+    display: inline;
+}
+#abt_img{
+    width: 100%;
+    height: auto;
+}
+#abt_txt{
+    padding: 2em;
+    width: 100%;
+    height: 100%;
+}
+ .parallax {
+         background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+@media screen and (max-width: 699px) {
+    #main{
+    height: 20em;
+   
+}
 }

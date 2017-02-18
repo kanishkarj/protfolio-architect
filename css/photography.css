@@ -1,0 +1,62 @@
+.images{
+        background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+   margin: 0.25em;
+   border-radius: 0.4em;
+}
+#main{
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:top;
+    background-image: url(../images/photos/bg.jpg);
+    width: 100%;
+    height: 30em;
+    margin: 0px;
+    padding: 0px;
+}
+.cat{
+
+}
+h3{
+    font-family: 'Pacifico', cursive;
+    font-weight: light;
+    font-size: xx-large;
+}
+section a:link {
+    color: white !important; 
+    font-weight: light;
+    transition: filter 0.5s;
+    transition: font-size 0.5s;
+}
+
+/* visited link */
+section a:visited {
+    color: white !important;
+    font-weight: light;
+    transition: filter 0.5s;
+    transition: font-size 0.5s;
+}
+
+/* mouse over link */
+section a:hover {
+    color: white !important;
+    font-size: 1.05em;
+    filter: blur(1px);
+    transition: filter 0.5s;
+    transition: font-size 0.5s;
+}
+
+/* selected link */
+section a:active {
+    color: white !important;
+    font-weight: light;
+    transition: filter 0.5s;
+    transition: font-size 0.5s;
+}
+
+@media screen and (max-width: 699px) {
+    #main{
+    height: 20em;
+    }
+}

@@ -1,0 +1,217 @@
+*{
+	font-family: 'Quicksand', cursive;
+}
+.navbar-default {
+    background-color: #7B68EE;
+    border-color: #7B68EE;
+    border-width: 0px;
+    border-radius: 0px;
+}
+/* title */
+.navbar-default .navbar-brand {
+    color: #777;
+    font-weight: bold;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #333;
+    border-bottom-color: #333;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: #DDD;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #DDD;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #CCC;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+    }
+}
+a:link {
+    color: lightblue !important; 
+    font-weight: bold;
+}
+
+/* visited link */
+a:visited {
+    color: lightblue !important;
+    font-weight: bold;
+}
+
+/* mouse over link */
+a:hover {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* selected link */
+a:active {
+    color: lightblue !important;
+    font-weight: bold;
+}
+footer nav{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+}
+footer{
+    height: 50px;
+    padding:10px;
+    margin-top: 2em;
+    background-color: #7B68EE;
+}
+footer nav ul{
+    list-style: none;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+}
+li {
+    display: inline;
+    margin-right: 25px;
+}
+.images{
+        background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+   margin: 0.25em;
+   border-radius: 0.4em;
+}
+#main{
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:top;
+
+    width: 100%;
+    height: 30em;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cat{
+
+}
+h3{
+    font-family: 'Pacifico', cursive;
+    font-weight: light;
+    font-size: xx-large;
+}
+
+.imgs{
+    padding: 0.5em;
+    height: 100%;
+    width:  100%;
+    background-color: darkslategray;
+    color: lightgray;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.imgs:hover{
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+
+h1{
+    text-transform: capitalize;
+    width: 100%;
+    padding: 1em;
+    background-color: darkslategray;
+    position: absolute;
+    bottom: 0px;
+    color: lightgray;
+    opacity: 0.8;
+}
+.bgimg{
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 20em;
+    border:0.1em solid white;
+}
+.mdl{
+    /*background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;*/
+    height: auto;
+    width: 100%;
+}
+.modal-dialog  {
+    width:90%;
+    height: auto;
+    border-radius: 0px;
+    color: gray;
+    border-color: rgba(0,0,0,0);
+}
+.modal-backdrop {
+   background-color: black;
+   border-color: rgba(0,0,0,0);
+}
+.modal-content  {
+    border-radius: 0px;
+    background-color: rgba(0,0,0,0.8);
+    border-color: rgba(0,0,0,0);   
+    margin: 0.5em;
+}
+.modal-header{
+border-color: rgba(0,0,0,0);
+padding:0px; 
+}
+.parallax {
+         background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 699px) {
+    #main{
+    height: 20em;
+    }
+}

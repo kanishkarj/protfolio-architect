@@ -10,7 +10,7 @@ header {
 	padding: 0px;
 	background-repeat:no-repeat;
 	background-size: cover;
-	background-position:right;
+	background-position:center;
 	color: white;
 	padding-top: 2em;
 	
@@ -42,7 +42,7 @@ section{
 	padding-top: 2em;
 	
 }
-#art2{
+#p2{
 	font-family: 'Quicksand', serif;
 	font-weight: bold;
 	color: white;
@@ -99,21 +99,25 @@ p{
   }
  a:link {
     color: black !important; 
+    transition: color 0.5s;
 }
 
 /* visited link */
 a:visited {
     color: black !important;
+    transition: color 0.5s;
 }
 
 /* mouse over link */
 a:hover {
     color: lightblue !important;
+    transition: color 0.5s;
 }
 
 /* selected link */
 a:active {
     color: black !important;
+    transition: color 0.5s;
 }
 footer nav{
 	align-content: center;
@@ -143,3 +147,16 @@ li {
 	background-color: gray;
 	opacity: 0.5;
 }
+#biopic{
+	height: 20em;width: 100%;
+	background-image: url(../images/bio-pic.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position:center;
+}
+.parallax {
+         background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
