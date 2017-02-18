@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Projects</title>
+    <title>Landscape</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -11,13 +11,12 @@
     <script type="text/javascript" src="js/json.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Pacifico" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/photography.css">
+    <link rel="stylesheet" type="text/css" href="css/photo.css">
 </head>
 <body>
 
 <header>
-    <nav class="navbar navbar-default">
+	<nav class="navbar navbar-default">
     <div class="container-fluid">
 
         <!-- Logo -->
@@ -33,32 +32,35 @@
         <!-- Menu Items -->
         <div class="collapse navbar-collapse" id="mainNavBar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="graphics.html">Graphics</a></li>
-                <li><a href="photography.html">Photography</a></li>
+                <li class="active"><a href="#">Photography</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </div>
 
     </div>
-<div id="main" class=" parallax" style="background-image: url(images/project.jpg);"></div>
+<div id="main" style="background-image: url(images/photos/landscape/bg.jpg);" class=" parallax">
+    <h1>Landscape Photography</h1>
+</div>
 </nav>
 
 </header>
+<section id="content" style="width: 95%;margin: auto;">
 
-<h1 style="padding: 1em;font-family: 'Pacifico', cursive;color: #7B68EE" class="text-center">Projects</h1>
-<section id="proj_list" class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding: 1em;"> 
+</section>
+<section id="modals_list">
     
 </section>
 <footer class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
-        <nav>
-            <ul>
+		<nav>
+			<ul>
                 <li><a href="#" id="fb_button"><img src="images/icons/facebook.svg" height="30px" width="30px"></a></li>
                 <li><a href="#" id="insta_button"><img src="images/icons/instagram.svg" height="30px" width="30px"></a></li>
                 <li><a href="#" id="twit_button"><img src="images/icons/twitter.svg" height="30px" width="30px"></a></li>
                 <li><a href="#" id="you_button"><img src="images/icons/google.svg" height="30px" width="30px"></a></li>
             </ul>
-        </nav>
+		</nav>
 </footer>
 <script type="text/javascript">
     var temp = " ";
@@ -66,9 +68,11 @@ $('#fb_button').attr('href',bio.facebook);
     $('#insta_button').attr('href',bio.instagram);
     $('#twit_button').attr('href',bio.twitter);
     $('#you_button').attr('href',bio.youtube);
-    for(var i=0;i<projects.length;i++){
-        temp = HTMLproj.replace("%link%",projects[i].link).replace("%title%",projects[i].title).replace("%path%",projects[i].path);
-        $('#proj_list').append(temp);
+    for(var i=0;i<photos.landscape.length;i++){
+        temp = HTMLPhoto.replace("%path%",photos.landscape[i].path).replace("%date%",photos.landscape[i].date).replace("%title%",photos.landscape[i].title).replace("%desc%",photos.landscape[i].desc).replace("%mdl_name%","modal" + i);;
+        var temp_modal = HTMLmodal.replace("%path%",photos.landscape[i].path).replace("%date%",photos.landscape[i].date).replace("%title%",photos.landscape[i].title).replace("%desc%",photos.landscape[i].desc).replace("%name%","modal" + i);
+        $('#modals_list').append(temp_modal);
+        $('#content').append(temp);
     }
 </script>
 </body>

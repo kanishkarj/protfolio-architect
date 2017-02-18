@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/masonry.js"></script>
+    <script type="text/javascript" src="js/json.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Pacifico" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/photography.css">
 </head>
 <body>
 
 <header>
-	<nav class="navbar navbar-default">
+    <nav class="navbar navbar-default">
     <div class="container-fluid">
 
         <!-- Logo -->
@@ -30,26 +34,59 @@
         <div class="collapse navbar-collapse" id="mainNavBar">
             <ul class="nav navbar-nav">
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="artwork.html">Artwork</a></li>
+                <li><a href="graphics.html">Graphics</a></li>
                 <li class="active"><a href="#">Photography</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </div>
 
     </div>
+<div id="main" class=" parallax"></div>
 </nav>
+
 </header>
 
-
+<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 text-center"><p>
+    "The camera is an instrument that teaches people how to see without a camera" 
+<br>
+    - Dorothea Lange
+<br><br><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non orci egestas, congue odio sit amet, mollis sapien. Nunc vulputate auctor aliquet. Etiam est erat, egestas id ligula eget, ultrices pellentesque nunc. Aliquam vel nunc non massa rutrum tristique. Sed tempus orci elit, eget volutpat magna fringilla in. Donec ac ante et urna commodo luctus sit amet ut mauris. Nunc hendrerit risus in velit porta feugiat. Suspendisse ipsum nunc, hendrerit vitae ligula nec, tincidunt semper dolor. Vestibulum sollicitudin eros vitae posuere auctor.
+</p></div>
+<h1 style="padding: 1em;font-family: 'Pacifico', cursive;color: #7B68EE" class="text-center">Categories</h1>
+<section class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding: 1em;"> 
+    <a style=" padding: 0.5em" href="landscape.html" class="col-lg-3 col-md-3 col-xs-12 col-sm-12 cat text-center" >
+    <h3 style="position: absolute; top: 2em; left: 0; width: 100%; ">Landscape</h3>
+        <img src="images/photos/land.jpg" class="img-circle" style=" width: 15em;height: 15em; margin: auto">
+    </a>
+    <a href="portrait.html" style=" padding: 0.5em" class="col-lg-3 col-md-3 col-xs-12 col-sm-12 cat text-center" >
+    <h3 style="position: absolute; top: 2em; left: 0; width: 100%;">Portrait</h3>
+        <img src="images/photos/portrait.jpg" class="img-circle" style=" width: 15em;height: 15em; margin: auto">
+    </a>
+    <a href="city.html" style=" padding: 0.5em" class="col-lg-3 col-md-3 col-xs-12 col-sm-12 cat text-center" >
+    <h3 style="position: absolute; top: 2em; left: 0; width: 100%; ">City</h3>
+        <img src="images/photos/city.jpg" class="img-circle" style=" width: 15em;height: 15em; margin: auto">
+    </a>
+    <a href="mono.html" style=" padding: 0.5em" class="col-lg-3 col-md-3 col-xs-12 col-sm-12 cat text-center" >
+    <h3 style="position: absolute; top: 2em; left: 0; width: 100%; ">Monochrome</h3>
+        <img src="images/photos/mono.jpg" class="img-circle" style=" width: 15em;height: 15em; margin: auto">
+    </a>
+</section>
 <footer class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
-		<nav>
-			<ul>
-				<li><a href="#"><img src="images/icons/facebook.svg" height="30px" width="30px"></a></li>
-				<li><a href="#"><img src="images/icons/instagram.svg" height="30px" width="30px"></a></li>
-				<li><a href="#"><img src="images/icons/twitter.svg" height="30px" width="30px"></a></li>
-				<li><a href="#"><img src="images/icons/google.svg" height="30px" width="30px"></a></li>
-			</ul>
-		</nav>
+        <nav>
+            <ul>
+                <li><a href="#" id="fb_button"><img src="images/icons/facebook.svg" height="30px" width="30px"></a></li>
+                <li><a href="#" id="insta_button"><img src="images/icons/instagram.svg" height="30px" width="30px"></a></li>
+                <li><a href="#" id="twit_button"><img src="images/icons/twitter.svg" height="30px" width="30px"></a></li>
+                <li><a href="#" id="you_button"><img src="images/icons/google.svg" height="30px" width="30px"></a></li>
+            </ul>
+        </nav>
 </footer>
+<script type="text/javascript">
+    $('#fb_button').attr('href',bio.facebook);
+    $('#insta_button').attr('href',bio.instagram);
+    $('#twit_button').attr('href',bio.twitter);
+    $('#you_button').attr('href',bio.youtube);
+</script>
 </body>
 </html>

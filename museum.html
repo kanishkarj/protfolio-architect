@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Projects</title>
+    <title>Project</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -12,12 +12,11 @@
     <script type="text/javascript" src="js/common.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Pacifico" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/photography.css">
 </head>
 <body>
 
 <header>
-    <nav class="navbar navbar-default">
+	<nav class="navbar navbar-default">
     <div class="container-fluid">
 
         <!-- Logo -->
@@ -33,42 +32,48 @@
         <!-- Menu Items -->
         <div class="collapse navbar-collapse" id="mainNavBar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Projects</a></li>
+                <li class="active"><a href="projects.html">Projects</a></li>
                 <li><a href="graphics.html">Graphics</a></li>
-                <li><a href="photography.html">Photography</a></li>
+                <li ><a href="photography.html">Photography</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </div>
 
     </div>
-<div id="main" class=" parallax" style="background-image: url(images/project.jpg);"></div>
+
+    <h1 class="text-center" id="title_h1" style="width:100%;background-color:BlueViolet ; padding: 1em;"></h1>
+
 </nav>
-
+<article id="desc" class="text-center" style="padding:1em;">
+</article>
 </header>
-
-<h1 style="padding: 1em;font-family: 'Pacifico', cursive;color: #7B68EE" class="text-center">Projects</h1>
-<section id="proj_list" class="col-lg-12 col-md-12 col-xs-12 col-sm-12" style="padding: 1em;"> 
+<section id="content" style="width: 80%;margin: auto; display: block;">
     
 </section>
+
 <footer class="col-lg-12 col-md-12 col-xs-12 col-sm-12" >
-        <nav>
-            <ul>
+		<nav>
+			<ul>
                 <li><a href="#" id="fb_button"><img src="images/icons/facebook.svg" height="30px" width="30px"></a></li>
                 <li><a href="#" id="insta_button"><img src="images/icons/instagram.svg" height="30px" width="30px"></a></li>
                 <li><a href="#" id="twit_button"><img src="images/icons/twitter.svg" height="30px" width="30px"></a></li>
                 <li><a href="#" id="you_button"><img src="images/icons/google.svg" height="30px" width="30px"></a></li>
             </ul>
-        </nav>
+		</nav>
 </footer>
 <script type="text/javascript">
     var temp = " ";
-$('#fb_button').attr('href',bio.facebook);
+    $('#fb_button').attr('href',bio.facebook);
     $('#insta_button').attr('href',bio.instagram);
     $('#twit_button').attr('href',bio.twitter);
     $('#you_button').attr('href',bio.youtube);
-    for(var i=0;i<projects.length;i++){
-        temp = HTMLproj.replace("%link%",projects[i].link).replace("%title%",projects[i].title).replace("%path%",projects[i].path);
-        $('#proj_list').append(temp);
+    $('#title_h1').append(projects[0].title);
+    $('#desc').append(projects[0].desc);
+    
+    for(var i=0;i<projects[0].images.length;i++){
+        temp = HTMLimg.replace("%path%",projects[0].images[i]);
+     
+        $('#content').append(temp);
     }
 </script>
 </body>
